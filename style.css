@@ -1,22 +1,51 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Take My Hand</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(#020111,#191970,#000);
+  overflow:hidden;
+  color:white;
+}
 
-  <div class="sky">
-    <h1>You Are Not Alone 🤍</h1>
-    <p>Even on the darkest nights, I'll be here beside you.</p>
+.sky{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
 
-    <button id="handBtn">Take My Hand ❤️</button>
-  </div>
+h1{
+  font-size:3rem;
+  text-shadow:0 0 15px white;
+}
 
-  <script src="script.js"></script>
+p{
+  font-size:1.2rem;
+  opacity:.9;
+}
 
-</body>
-</html>
+button{
+  margin-top:25px;
+  padding:15px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:#ff4d6d;
+  color:white;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px #ff4d6d;
+}
+
+#message{
+  margin-top:30px;
+  font-size:1.5rem;
+  color:#ffd700;
+  text-shadow:0 0 15px gold;
+}
